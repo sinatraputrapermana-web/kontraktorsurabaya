@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-08-26T08:00:00+07:00</lastmod>
+    <lastmod>2026-08-28T10:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -107,7 +107,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/layanan/interior-ruang-tamu-modern.webp</image:loc>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/layanan/desain-interior-ruang-tamu-modern.webp</image:loc>
       <image:title>Jasa Desain Interior Custom Rumah &amp; Usaha Surabaya</image:title>
     </image:image>
   </url>
@@ -171,6 +171,102 @@
     <image:image>
       <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/interior-ruang-usaha-pencahayaan-alami-surabaya.webp</image:loc>
       <image:title>Interior ruang usaha dengan pencahayaan alami dari skylight di bangunan komersial Surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 15. Artikel 4: Renovasi Fasad Rumah Surabaya Before After -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/renovasi-fasad-rumah-surabaya-before-after</loc>
+    <lastmod>2026-08-27T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/before-after-renovasi-fasad-rumah-surabaya.webp</image:loc>
+      <image:title>Before after renovasi fasad rumah di Surabaya menjadi gaya modern</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/material-renovasi-fasad-acp-batu-alam.webp</image:loc>
+      <image:title>Material ACP dan batu alam untuk renovasi fasad rumah modern</image:title>
+    </image:image>
+  </url>
+
+  <!-- 16. Artikel 5: Desain Interior Rumah Minimalis Surabaya Japandi -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/desain-interior-rumah-minimalis-surabaya</loc>
+    <lastmod>2026-08-27T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/interior-japandi-kayu-hangat-surabaya.webp</image:loc>
+      <image:title>Desain interior rumah minimalis Surabaya bergaya Japandi dengan sentuhan kayu hangat</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/ruang-keluarga-material-kayu-linen-surabaya.webp</image:loc>
+      <image:title>Ruang keluarga dengan material kayu dan linen bernuansa hangat</image:title>
+    </image:image>
+  </url>
+
+  <!-- 17. Artikel 6: 7 Strategi Menghemat Biaya Bangun Rumah Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/cara-menghemat-biaya-bangun-rumah-surabaya</loc>
+    <lastmod>2026-08-27T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/strategi-hemat-biaya-bangun-rumah-surabaya.webp</image:loc>
+      <image:title>Strategi menghemat biaya bangun rumah di Surabaya tanpa mengurangi mutu struktur</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rab-detail-estimasi-biaya-rumah-surabaya.webp</image:loc>
+      <image:title>Contoh RAB detail untuk estimasi biaya bangun rumah</image:title>
+    </image:image>
+  </url>
+
+  <!-- 18. Artikel 7: Desain Rumah Tropis Modern Surabaya Fasad Anti Panas -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/desain-rumah-tropis-modern-surabaya</loc>
+    <lastmod>2026-08-28T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/fasad-rumah-tropis-modern-surabaya.webp</image:loc>
+      <image:title>Fasad rumah tropis modern di Surabaya dengan elemen shading anti panas</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/roster-secondary-skin-rumah-tropis.webp</image:loc>
+      <image:title>Roster dan secondary skin pada fasad rumah tropis modern</image:title>
+    </image:image>
+  </url>
+
+  <!-- 19. Artikel 8: 7 Tahapan Membangun Rumah dari Nol yang Runtut -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/tahapan-membangun-rumah-dari-nol</loc>
+    <lastmod>2026-08-28T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/tahapan-membangun-rumah-dari-nol.webp</image:loc>
+      <image:title>Tahapan membangun rumah dari nol mulai dari galian hingga finishing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/struktur-pondasi-kolom-rumah-surabaya.webp</image:loc>
+      <image:title>Pekerjaan struktur pondasi dan kolom pada tahap awal membangun rumah</image:title>
+    </image:image>
+  </url>
+
+  <!-- 20. Artikel 9: Ruko Minimalis 3 Lantai untuk Kawasan Bisnis Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/pembangunan-ruko-minimalis-surabaya</loc>
+    <lastmod>2026-08-28T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/ruko-minimalis-3-lantai-surabaya.webp</image:loc>
+      <image:title>Ruko minimalis 3 lantai untuk kawasan bisnis di Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/denah-ruko-usaha-hunian-surabaya.webp</image:loc>
+      <image:title>Denah ruko dengan area usaha di lantai bawah dan hunian di lantai atas</image:title>
     </image:image>
   </url>
 
