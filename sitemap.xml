@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-08-28T10:00:00+07:00</lastmod>
+    <lastmod>2026-08-29T10:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -267,6 +267,54 @@
     <image:image>
       <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/denah-ruko-usaha-hunian-surabaya.webp</image:loc>
       <image:title>Denah ruko dengan area usaha di lantai bawah dan hunian di lantai atas</image:title>
+    </image:image>
+  </url>
+
+  <!-- 21. Artikel 10: Solusi Atap Bocor dan Dak Rembes Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/solusi-mengatasi-atap-bocor-dak-rembes</loc>
+    <lastmod>2026-08-29T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/perbaikan-atap-bocor-dak-rembes-surabaya.webp</image:loc>
+      <image:title>Perbaikan atap bocor dan dak rembes secara permanen di Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/waterproofing-membran-coating-atap.webp</image:loc>
+      <image:title>Aplikasi waterproofing membran dan coating pada dak beton</image:title>
+    </image:image>
+  </url>
+
+  <!-- 22. Artikel 11: Desain Interior Apartemen Studio Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/desain-interior-apartemen-studio-surabaya</loc>
+    <lastmod>2026-08-29T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/interior-apartemen-studio-fungsional-surabaya.webp</image:loc>
+      <image:title>Desain interior apartemen studio fungsional di Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/furnitur-multifungsi-apartemen-studio.webp</image:loc>
+      <image:title>Furnitur multifungsi untuk memaksimalkan ruang apartemen studio</image:title>
+    </image:image>
+  </url>
+
+  <!-- 23. Artikel 12: Mengenal RAB Bangunan dan Komponen Utamanya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/apa-itu-rab-bangunan-konstruksi</loc>
+    <lastmod>2026-08-29T10:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rab-bangunan-komponen-utama-surabaya.webp</image:loc>
+      <image:title>Komponen utama RAB dalam proyek konstruksi bangunan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/contoh-dokumen-rab-proyek-rumah.webp</image:loc>
+      <image:title>Contoh dokumen RAB untuk proyek pembangunan rumah</image:title>
     </image:image>
   </url>
 
