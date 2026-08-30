@@ -5136,3 +5136,157 @@ section {
     font-size: 0.76rem !important;
   }
 }
+
+/* =============================================================
+   MODERN LUXURY COMPARISON MATRIX & TABLE SYSTEM
+   ============================================================= */
+.comparison-card-wrapper {
+  background: var(--white);
+  border-radius: 20px;
+  border: 1px solid var(--cream-border);
+  box-shadow: 0 12px 35px rgba(114, 20, 34, 0.06);
+  overflow: hidden;
+  position: relative;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 0;
+}
+
+.comparison-table thead th {
+  padding: 1.25rem 1.4rem;
+  font-size: 0.96rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--cream-border);
+  vertical-align: middle;
+}
+
+.comparison-table thead th.col-feature {
+  background: #FAF6F0;
+  color: var(--gray-800);
+  width: 38%;
+  text-align: left;
+  border-right: 1px solid var(--cream-border);
+}
+
+.comparison-table thead th.col-brand {
+  background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-dark) 100%);
+  color: var(--white);
+  width: 33%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(114, 20, 34, 0.18);
+}
+
+.comparison-table thead th.col-competitor {
+  background: #F4EFEA;
+  color: var(--gray-700);
+  width: 29%;
+  text-align: center;
+  border-left: 1px solid var(--cream-border);
+}
+
+.comparison-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.comparison-table tbody tr:hover {
+  background: #FFFDF9;
+}
+
+.comparison-table tbody td {
+  padding: 1.15rem 1.4rem;
+  font-size: 0.92rem;
+  border-bottom: 1px solid var(--cream-border);
+  vertical-align: middle;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table tbody td.col-feature {
+  font-weight: 600;
+  color: var(--gray-900);
+  background: #FCFAF7;
+  border-right: 1px solid var(--cream-border);
+}
+
+.comparison-table tbody td.col-brand {
+  background: #FDF9F3;
+  color: var(--maroon-dark);
+  font-weight: 700;
+  text-align: center;
+  border-left: 2px solid rgba(114, 20, 34, 0.12);
+  border-right: 2px solid rgba(114, 20, 34, 0.12);
+}
+
+.comparison-table tbody td.col-competitor {
+  color: var(--gray-600);
+  text-align: center;
+  background: var(--white);
+}
+
+.cmp-badge-best {
+  display: inline-block;
+  background: #E5A93C;
+  color: #2D050C;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.22rem 0.65rem;
+  border-radius: 50px;
+  margin-bottom: 0.35rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.cmp-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--maroon-dark);
+  font-weight: 700;
+  text-align: left;
+}
+
+.cmp-check i {
+  color: #198754;
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+
+.cmp-cross {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--gray-600);
+  text-align: left;
+}
+
+.cmp-cross i {
+  color: #DC3545;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 767.98px) {
+  .comparison-card-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 16px;
+  }
+  
+  .comparison-table {
+    min-width: 580px;
+  }
+  
+  .comparison-table thead th,
+  .comparison-table tbody td {
+    padding: 0.85rem 1rem;
+    font-size: 0.84rem;
+  }
+}
