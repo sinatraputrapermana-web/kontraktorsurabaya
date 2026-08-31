@@ -318,4 +318,52 @@
     </image:image>
   </url>
 
+  <!-- 24. Artikel 13: Tren Arsitektur Rumah Mewah Klasik Modern Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/arsitektur-rumah-mewah-surabaya</loc>
+    <lastmod>2026-08-31T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/fasad-rumah-mewah-klasik-modern-dharmahusada.webp</image:loc>
+      <image:title>Fasad rumah mewah klasik modern di kawasan Dharmahusada Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/material-marmer-kayu-jati-rumah-mewah.webp</image:loc>
+      <image:title>Material marmer dan kayu jati solid pada interior rumah mewah</image:title>
+    </image:image>
+  </url>
+
+  <!-- 25. Artikel 14: Rumah Minimalis Scandinavian Sidoarjo Kontraktor Profesional -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/kontraktor-rumah-minimalis-sidoarjo</loc>
+    <lastmod>2026-08-31T08:30:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rumah-minimalis-scandinavian-sidoarjo.webp</image:loc>
+      <image:title>Rumah minimalis bergaya Scandinavian hasil karya kontraktor di Sidoarjo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/interior-kayu-terang-scandinavian-sidoarjo.webp</image:loc>
+      <image:title>Interior kayu terang bergaya Scandinavian pada rumah di Sidoarjo</image:title>
+    </image:image>
+  </url>
+
+  <!-- 26. Artikel 15: Konstruksi Cafe Outdoor Industrial Hemat Biaya Gresik -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/konstruksi-cafe-outdoor-gresik</loc>
+    <lastmod>2026-08-31T09:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/cafe-outdoor-industrial-ekspos-besi-gresik.webp</image:loc>
+      <image:title>Konstruksi cafe outdoor bergaya industrial dengan ekspos struktur besi di Gresik</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/struktur-baja-ringan-atap-cafe-gresik.webp</image:loc>
+      <image:title>Struktur baja ringan pada atap cafe outdoor hemat biaya</image:title>
+    </image:image>
+  </url>
+
 </urlset>
