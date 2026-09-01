@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-08-31T09:00:00+07:00</lastmod>
+    <lastmod>2026-09-01T09:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -363,6 +363,54 @@
     <image:image>
       <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/struktur-baja-ringan-atap-cafe-gresik.webp</image:loc>
       <image:title>Struktur baja ringan pada atap cafe outdoor hemat biaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 27. Artikel 16: Renovasi Ruko Tua Jadi Co-Working Space Minimalis -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/renovasi-ruko-tua-surabaya-minimalis</loc>
+    <lastmod>2026-09-01T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/coworking-space-renovasi-ruko-surabaya.webp</image:loc>
+      <image:title>Renovasi ruko tua menjadi co-working space minimalis di Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/interior-cozy-material-kayu-coworking.webp</image:loc>
+      <image:title>Interior co-working space cozy dengan material kayu dan pencahayaan hangat</image:title>
+    </image:image>
+  </url>
+
+  <!-- 28. Artikel 17: Desain Interior Cafe Modern Tropis Estetik Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/desain-interior-cafe-surabaya-viral</loc>
+    <lastmod>2026-09-01T08:30:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/interior-cafe-modern-tropis-surabaya.webp</image:loc>
+      <image:title>Desain interior cafe modern tropis yang estetik di Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/photo-spot-tanaman-tropis-cafe-surabaya.webp</image:loc>
+      <image:title>Photo spot dengan tanaman tropis pada interior cafe Surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 29. Artikel 18: Estimasi Biaya Pasang Atap Baja Ringan Gresik -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/biaya-pasang-atap-baja-ringan-gresik</loc>
+    <lastmod>2026-09-01T09:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/estimasi-biaya-atap-baja-ringan-gresik.webp</image:loc>
+      <image:title>Estimasi biaya pasang atap baja ringan per meter persegi di Gresik</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rincian-komponen-rangka-baja-ringan.webp</image:loc>
+      <image:title>Rincian komponen rangka baja ringan dan penutup atap</image:title>
     </image:image>
   </url>
 
