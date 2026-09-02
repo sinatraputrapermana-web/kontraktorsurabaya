@@ -379,5 +379,6 @@ Aturan ini bersifat **MUTLAK & PATEN**. Dilarang mengubah, menambah, menghapus, 
 
 ## 3. Integrasi Wajib untuk Setiap Artikel Baru
 1. Daftarkan kartu artikel di **bagian teratas** grid artikel di [`blog.html`](file:///d:/TUGAS%20KULIAH/Project%20MKI/ProjectBootstrapAktif/kontraktorsurabaya/blog.html) dengan filter class yang sesuai (`filter-arsitek`, `filter-rumah`, `filter-bangunan`, `filter-renovasi`, `filter-interior`, `filter-rab`).
-2. Tambahkan entri URL baru di [`sitemap.xml`](file:///d:/TUGAS%20KULIAH/Project%20MKI/ProjectBootstrapAktif/kontraktorsurabaya/sitemap.xml) lengkap dengan tag `<image:image>` dan perbarui `<lastmod>` halaman `blog.html`.
-3. **JANGAN PERNAH** memodifikasi `main.css`, `main.min.css`, ataupun `main.js`.
+2. Perbarui Schema JSON-LD `@type: "ItemList"` (`#articles`) di [`blog.html`](file:///d:/TUGAS%20KULIAH/Project%20MKI/ProjectBootstrapAktif/kontraktorsurabaya/blog.html) dengan menambahkan `ListItem` artikel baru di posisi teratas (`position: 1` dst) dan sesuaikan nilai `numberOfItems`.
+3. Tambahkan entri URL baru di [`sitemap.xml`](file:///d:/TUGAS%20KULIAH/Project%20MKI/ProjectBootstrapAktif/kontraktorsurabaya/sitemap.xml) lengkap dengan tag `<image:image>` dan perbarui `<lastmod>` halaman `/blog`.
+4. **JANGAN PERNAH** memodifikasi `main.css`, `main.min.css`, ataupun `main.js`.

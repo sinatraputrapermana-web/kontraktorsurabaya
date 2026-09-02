@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-09-01T09:00:00+07:00</lastmod>
+    <lastmod>2026-09-02T09:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -411,6 +411,54 @@
     <image:image>
       <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rincian-komponen-rangka-baja-ringan.webp</image:loc>
       <image:title>Rincian komponen rangka baja ringan dan penutup atap</image:title>
+    </image:image>
+  </url>
+
+  <!-- 30. Artikel 19: Desain Rumah Split-Level Surabaya, Maksimalkan Lahan -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/desain-rumah-split-level-surabaya</loc>
+    <lastmod>2026-09-02T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rumah-split-level-lahan-sempit-surabaya.webp</image:loc>
+      <image:title>Desain rumah split-level untuk lahan sempit di perumahan Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/tangga-pendek-antar-level-rumah-surabaya.webp</image:loc>
+      <image:title>Tangga pendek penghubung antar level pada rumah split-level Surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 31. Artikel 20: Konstruksi Rumah Modern Tropis Kokoh Cuaca Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/rumah-modern-tropis-surabaya-kokoh</loc>
+    <lastmod>2026-09-02T08:30:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/konstruksi-rumah-modern-tropis-kokoh-surabaya.webp</image:loc>
+      <image:title>Konstruksi rumah modern tropis yang kokoh menghadapi cuaca Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/cat-eksterior-tahan-cuaca-pesisir-surabaya.webp</image:loc>
+      <image:title>Aplikasi cat eksterior tahan cuaca pada rumah modern tropis pesisir</image:title>
+    </image:image>
+  </url>
+
+  <!-- 32. Artikel 21: Model Kos-Kosan Modern Diminati Mahasiswa Sidoarjo -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/pembangunan-kos-kosan-sidoarjo</loc>
+    <lastmod>2026-09-02T09:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/kos-kosan-modern-ventilasi-baik-sidoarjo.webp</image:loc>
+      <image:title>Model kos-kosan modern dengan ventilasi baik di Sidoarjo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/kamar-kos-jendela-besar-sirkulasi-udara.webp</image:loc>
+      <image:title>Kamar kos dengan jendela besar untuk sirkulasi udara optimal</image:title>
     </image:image>
   </url>
 
