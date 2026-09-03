@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-09-02T09:00:00+07:00</lastmod>
+    <lastmod>2026-09-03T09:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -459,6 +459,54 @@
     <image:image>
       <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/kamar-kos-jendela-besar-sirkulasi-udara.webp</image:loc>
       <image:title>Kamar kos dengan jendela besar untuk sirkulasi udara optimal</image:title>
+    </image:image>
+  </url>
+
+  <!-- 33. Artikel 22: Renovasi Rumah Subsidi Sidoarjo, Dapur dan Carport -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/renovasi-rumah-subsidi-sidoarjo-efisien</loc>
+    <lastmod>2026-09-03T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/renovasi-dapur-carport-rumah-subsidi-sidoarjo.webp</image:loc>
+      <image:title>Renovasi bagian belakang rumah subsidi untuk dapur dan carport di Sidoarjo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/denah-efisien-rumah-tipe-subsidi-belakang.webp</image:loc>
+      <image:title>Denah efisien area belakang rumah tipe subsidi di Sidoarjo</image:title>
+    </image:image>
+  </url>
+
+  <!-- 34. Artikel 23: Lighting Design Interior Ruang Tamu Mewah Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/pencahayaan-lighting-interior-rumah</loc>
+    <lastmod>2026-09-03T08:30:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/lighting-design-ruang-tamu-mewah-surabaya.webp</image:loc>
+      <image:title>Lighting design untuk ruang tamu mewah di Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/lampu-berlapis-ambient-task-accent.webp</image:loc>
+      <image:title>Pencahayaan berlapis ambient, task, dan accent pada ruang tamu Surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 35. Artikel 24: Estimasi Biaya Pembuatan Pagar Rumah Minimalis Modern per Meter di Sidoarjo -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/biaya-pembuatan-pagar-minimalis-sidoarjo</loc>
+    <lastmod>2026-09-03T09:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/pagar-besi-hollow-minimalis-sidoarjo.webp</image:loc>
+      <image:title>Pagar besi hollow minimalis modern di Sidoarjo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rincian-komponen-biaya-pagar-besi-hollow.webp</image:loc>
+      <image:title>Rincian komponen biaya pembuatan pagar besi hollow di Sidoarjo</image:title>
     </image:image>
   </url>
 
