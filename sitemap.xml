@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-09-03T09:00:00+07:00</lastmod>
+    <lastmod>2026-09-04T09:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -507,6 +507,54 @@
     <image:image>
       <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rincian-komponen-biaya-pagar-besi-hollow.webp</image:loc>
       <image:title>Rincian komponen biaya pembuatan pagar besi hollow di Sidoarjo</image:title>
+    </image:image>
+  </url>
+
+  <!-- 36. Artikel 25: Inspirasi Desain Fasad Rumah Minimalis Lebar 6 Meter Populer di Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/desain-fasad-rumah-minimalis-surabaya</loc>
+    <lastmod>2026-09-04T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/fasad-rumah-minimalis-lebar-6-meter.webp</image:loc>
+      <image:title>Desain fasad rumah minimalis lebar 6 meter di Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/material-fasad-rumah-minimalis-surabaya.webp</image:loc>
+      <image:title>Material fasad untuk desain rumah minimalis Surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 37. Artikel 26: Pilihan Material Beton Bertulang Terbaik untuk Bangun Rumah di Wilayah Gresik -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/kontraktor-rumah-gresik-material</loc>
+    <lastmod>2026-09-04T08:30:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/material-beton-bertulang-rumah-gresik.webp</image:loc>
+      <image:title>Material beton bertulang kontraktor rumah Gresik</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/pondasi-rumah-tanah-gresik.webp</image:loc>
+      <image:title>Pondasi rumah untuk kondisi tanah di Gresik</image:title>
+    </image:image>
+  </url>
+
+  <!-- 38. Artikel 27: Pemanfaatan Struktur Baja Berat WF untuk Konstruksi Gudang Efisien di Margomulyo -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/konstruksi-gudang-baja-surabaya</loc>
+    <lastmod>2026-09-04T09:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/struktur-baja-wf-gudang-surabaya.webp</image:loc>
+      <image:title>Struktur baja WF konstruksi gudang Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/gudang-bentang-lebar-margomulyo.webp</image:loc>
+      <image:title>Konstruksi gudang bentang lebar Margomulyo Surabaya</image:title>
     </image:image>
   </url>
 
