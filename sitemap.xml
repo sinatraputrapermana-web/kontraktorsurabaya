@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-09-04T09:00:00+07:00</lastmod>
+    <lastmod>2026-09-05T08:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -555,6 +555,54 @@
     <image:image>
       <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/gudang-bentang-lebar-margomulyo.webp</image:loc>
       <image:title>Konstruksi gudang bentang lebar Margomulyo Surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 39. Artikel 28: Model Kanopi Tempered Glass Mewah Tren Terbaru untuk Rumah di Gresik -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/kanopi-carport-tempered-glass-gresik</loc>
+    <lastmod>2026-09-05T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/kanopi-tempered-glass-carport-gresik.webp</image:loc>
+      <image:title>Kanopi tempered glass mewah untuk carport rumah di Gresik</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rangka-baja-spider-fitting-kanopi-kaca.webp</image:loc>
+      <image:title>Rangka baja dan spider fitting pada kanopi tempered glass</image:title>
+    </image:image>
+  </url>
+
+  <!-- 40. Artikel 29: Model Backdrop TV Minimalis dengan Kisi-Kisi Kayu yang Elegan di Sidoarjo -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/backdrop-tv-minimalis-wood-panel</loc>
+    <lastmod>2026-09-05T08:30:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/backdrop-tv-kisi-kisi-kayu-sidoarjo.webp</image:loc>
+      <image:title>Backdrop TV minimalis dengan kisi-kisi kayu elegan di Sidoarjo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/pencahayaan-tersembunyi-backdrop-kayu-tv.webp</image:loc>
+      <image:title>Pencahayaan tersembunyi pada celah kisi kayu backdrop TV</image:title>
+    </image:image>
+  </url>
+
+  <!-- 41. Artikel 30: Simulasi Estimasi Biaya Bangun Ruko 2 Lantai untuk Area Komersial Mojokerto -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/biaya-bangun-ruko-2-lantai-mojokerto</loc>
+    <lastmod>2026-09-05T09:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/simulasi-biaya-ruko-2-lantai-mojokerto.webp</image:loc>
+      <image:title>Simulasi estimasi biaya bangun ruko 2 lantai di Mojokerto</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/komponen-rab-ruko-komersial-mojokerto.webp</image:loc>
+      <image:title>Komponen RAB untuk proyek ruko komersial 2 lantai</image:title>
     </image:image>
   </url>
 
