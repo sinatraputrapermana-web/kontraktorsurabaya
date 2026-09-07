@@ -606,4 +606,52 @@
     </image:image>
   </url>
 
+  <!-- 42. Artikel 31: Apa Saja Dokumen Gambar Kerja yang Didapat saat Sewa Jasa Arsitek Surabaya? -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/apa-saja-dokumen-gambar-kerja-arsitek</loc>
+    <lastmod>2026-09-07T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/dokumen-gambar-kerja-arsitek-surabaya.webp</image:loc>
+      <image:title>Kelengkapan dokumen gambar kerja dari jasa arsitek di Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/gambar-3d-render-desain-rumah-arsitek.webp</image:loc>
+      <image:title>Gambar 3D render sebagai bagian dokumen desain dari jasa arsitek</image:title>
+    </image:image>
+  </url>
+
+  <!-- 43. Artikel 32: Perbedaan Kontraktor Resmi vs Pemborong Harian: Mana yang Lebih Aman? -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/perbedaan-kontraktor-resmi-vs-pemborong</loc>
+    <lastmod>2026-09-07T08:30:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/kontraktor-resmi-vs-pemborong-harian.webp</image:loc>
+      <image:title>Perbandingan kontraktor resmi dan pemborong harian untuk proyek rumah</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/kontrak-kerja-tertulis-kontraktor-rumah.webp</image:loc>
+      <image:title>Kontrak kerja tertulis sebagai bentuk legalitas kontraktor resmi</image:title>
+    </image:image>
+  </url>
+
+  <!-- 44. Artikel 33: Tahapan Perizinan PBG/IMB Sebelum Memulai Konstruksi Gedung di Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/tahapan-perizinan-konstruksi-gedung-surabaya</loc>
+    <lastmod>2026-09-07T09:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/perizinan-pbg-konstruksi-gedung-surabaya.webp</image:loc>
+      <image:title>Tahapan perizinan PBG sebelum konstruksi gedung di Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/dokumen-rencana-teknis-pengajuan-pbg.webp</image:loc>
+      <image:title>Dokumen rencana teknis untuk pengajuan PBG bangunan gedung</image:title>
+    </image:image>
+  </url>
+
 </urlset>
