@@ -382,3 +382,53 @@ Aturan ini bersifat **MUTLAK & PATEN**. Dilarang mengubah, menambah, menghapus, 
 2. Perbarui Schema JSON-LD `@type: "ItemList"` (`#articles`) di [`blog.html`](file:///d:/TUGAS%20KULIAH/Project%20MKI/ProjectBootstrapAktif/kontraktorsurabaya/blog.html) dengan menambahkan `ListItem` artikel baru di posisi teratas (`position: 1` dst) dan sesuaikan nilai `numberOfItems`.
 3. Tambahkan entri URL baru di [`sitemap.xml`](file:///d:/TUGAS%20KULIAH/Project%20MKI/ProjectBootstrapAktif/kontraktorsurabaya/sitemap.xml) lengkap dengan tag `<image:image>` dan perbarui `<lastmod>` halaman `/blog`.
 4. **JANGAN PERNAH** memodifikasi `main.css`, `main.min.css`, ataupun `main.js`.
+
+---
+
+## 4. Aturan Khusus Artikel Bertabel (`<table>`)
+
+Jika artikel memuat elemen `<table>` (misal komparasi harga, simulasi anggaran, spesifikasi teknis):
+
+### A. Scoped CSS di `<head>`
+```html
+<style>
+  .article-main {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+  }
+  .table-responsive {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--cream-border);
+    border-radius: 12px;
+    margin-bottom: 1.25rem;
+  }
+  .table-responsive table {
+    margin-bottom: 0;
+  }
+  @media (max-width: 767.98px) {
+    .formula-box {
+      padding: 1.25rem 1rem !important;
+    }
+    .formula-box p {
+      font-size: 1.02rem !important;
+      word-break: break-word;
+    }
+  }
+</style>
+```
+
+### B. Standar Tag Tabel & Min-Width
+- Wadah pembungkus: `<div class="table-responsive my-4">`
+- Kelas tabel: `class="table table-bordered table-hover align-middle mb-0"`
+- Min-width tabel: `style="min-width: 640px;"` (5 kolom) atau `540px` (3 kolom)
+- Header `<thead>`: `class="table-dark" style="background:var(--maroon);"`
+- Tepat di bawah pembungkus tabel:
+  ```html
+  <small class="text-muted d-block mt-n2 mb-4 text-center d-md-none"><i class="bi bi-arrow-left-right me-1"></i>Geser tabel ke samping untuk melihat detail</small>
+  ```
+

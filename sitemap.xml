@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-09-05T08:00:00+07:00</lastmod>
+    <lastmod>2026-09-08T09:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -651,6 +651,54 @@
     <image:image>
       <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/dokumen-rencana-teknis-pengajuan-pbg.webp</image:loc>
       <image:title>Dokumen rencana teknis untuk pengajuan PBG bangunan gedung</image:title>
+    </image:image>
+  </url>
+
+  <!-- 45. Artikel 34: 10 Kesalahan Fatal Saat Renovasi Rumah yang Bikin Boros Anggaran Belanja -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/kesalahan-renovasi-rumah-bikin-boros</loc>
+    <lastmod>2026-09-08T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/kesalahan-renovasi-rumah-boros-anggaran.webp</image:loc>
+      <image:title>kesalahan renovasi rumah yang bikin boros anggaran</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/estimasi-biaya-renovasi-rumah-surabaya.webp</image:loc>
+      <image:title>estimasi biaya renovasi rumah di surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 46. Artikel 35: Solusi Smart Furniture Lipat untuk Apartemen Mewah di Surabaya -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/apartemen-interior-custom-furniture-lipat</loc>
+    <lastmod>2026-09-08T08:30:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/smart-furniture-lipat-apartemen-surabaya.webp</image:loc>
+      <image:title>smart furniture lipat apartemen interior custom surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/wallbed-kasur-lipat-apartemen-mewah.webp</image:loc>
+      <image:title>wallbed kasur lipat untuk apartemen mewah surabaya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 47. Artikel 36: Panduan Rumus Cara Menghitung Biaya Bangun Rumah Kasar Per Meter Persegi -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/cara-menghitung-biaya-bangun-rumah-permeter</loc>
+    <lastmod>2026-09-08T09:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/rumus-hitung-biaya-bangun-rumah-permeter.webp</image:loc>
+      <image:title>cara menghitung biaya bangun rumah per meter persegi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kontraktorsurabaya.biz.id/assets/img/blog/simulasi-anggaran-bangun-rumah-surabaya.webp</image:loc>
+      <image:title>simulasi anggaran bangun rumah surabaya</image:title>
     </image:image>
   </url>
 
