@@ -79,7 +79,7 @@ Setiap file `blog/{slug}.html` **HARUS** memiliki urutan elemen persis seperti b
 
 ## 2. INTEGRASI SISTEMIK WAJIB SETIAP POSTING ARTIKEL
 1. **`sitemap.xml`**:
-   - Tambahkan URL artikel baru lengkap dengan `<image:image>`.
+   - Tambahkan URL artikel baru dengan format standar link halaman (`<loc>`, `<lastmod>`, `<changefreq>`, `<priority>`) tanpa menyertakan tag `<image:image>`.
    - **MUTLAK**: Update `<lastmod>` pada URL `#3 Blog Index` (`https://kontraktorsurabaya.biz.id/blog`) ke tanggal artikel terbaru.
 2. **`blog.html`**:
    - Tambahkan Card artikel di urutan paling pertama grid (`.portfolio-grid`) dengan filter Isotope yang sesuai.
