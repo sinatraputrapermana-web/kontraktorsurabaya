@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-09-15T09:00:00+07:00</lastmod>
+    <lastmod>2026-09-16T16:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -786,6 +786,30 @@
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog/cara-membaca-sph-surat-penawaran-kontraktor</loc>
     <lastmod>2026-09-15T09:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 54. Artikel 43: Panduan Menggunakan Jasa Desain Rumah 2 Lantai Surabaya untuk Keluarga Muda -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/jasa-desain-rumah-2-lantai-surabaya</loc>
+    <lastmod>2026-09-16T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 55. Artikel 44: Cara Memantau Progres Pembangunan Rumah Tanpa Harus Sering ke Lokasi Proyek -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/cara-memantau-progres-kontraktor-online</loc>
+    <lastmod>2026-09-16T12:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 56. Artikel 45: SOP Pembangunan Cafe dan Restoran: Menata Jalur MEP dan Pembuangan Grease Trap -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/sop-pembangunan-cafe-restoran-mep</loc>
+    <lastmod>2026-09-16T16:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
