@@ -1,33 +1,111 @@
 # robots.txt for https://kontraktorsurabaya.biz.id
-# Updated: 2026-08-26
+# Updated: 2026-09-17
+# LLM Context File: https://kontraktorsurabaya.biz.id/llms.txt
 
+# ════ DEFAULT ALL CRAWLERS ════
 User-agent: *
 Allow: /
 
-# AI Search & Answer Engine Crawlers (AEO / GEO Optimization)
+# ════ TRADITIONAL SEARCH ENGINE CRAWLERS ════
 User-agent: Googlebot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: Bingbot
 Allow: /
 
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# ════ OPENAI (ChatGPT, GPT-4o, SearchGPT) ════
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+# ════ GOOGLE AI & GEMINI (Google-Extended) ════
+User-agent: Google-Extended
+Allow: /
+
+# ════ ANTHROPIC (Claude, Claude-Web) ════
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ════ PERPLEXITY AI ════
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Perplexity-Search
+Allow: /
+
+# ════ APPLE (Apple Intelligence, Siri, Spotlight) ════
 User-agent: Applebot
 Allow: /
 
-User-agent: Bingbot
+User-agent: Applebot-Extended
 Allow: /
 
-# Sitemap Location
+# ════ META AI ════
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# ════ COHERE AI ════
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# ════ MISTRAL AI & DEEPSEEK ════
+User-agent: MistralBot
+Allow: /
+
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: DeepSeek-R1
+Allow: /
+
+# ════ BYTEDANCE & AMAZON ════
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# ════ OTHER AI SEARCH ENGINES ════
+User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# ════ SITEMAP DIRECTIVE ════
 Sitemap: https://kontraktorsurabaya.biz.id/sitemap.xml

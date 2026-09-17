@@ -1,434 +1,124 @@
-# Standard Template & Aturan Baku Pembuatan Artikel Blog Kontraktor Surabaya
+---
+trigger: always_on
+---
 
-Aturan ini bersifat **MUTLAK & PATEN**. Dilarang mengubah, menambah, menghapus, atau mengutak-atik struktur HTML, CSS (`main.css`/`main.min.css`), dan JS (`main.js`).
+# BLOG STANDARD ARCHITECTURE
 
-## 1. Jadwal & Volume Publikasi
-- **Volume:** Tepat 3 artikel per hari kalender.
-- **Penulis Mutlak:** `Erlang Sinatrya` (`../assets/img/person/erlang.webp`).
-
-## 2. Struktur HTML Baku Artikel Blog (`blog/*.html`)
-
-```html
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{Meta Title}} | Kontraktor Surabaya</title>
-  <meta name="description" content="{{Meta Description}}">
-  <meta name="keywords" content="{{Keywords}}">
-  <meta name="author" content="Erlang Sinatrya">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="googlebot" content="index, follow">
-  <link rel="canonical" href="https://kontraktorsurabaya.biz.id/blog/{{Slug}}">
-  <link rel="alternate" hreflang="id-ID" href="https://kontraktorsurabaya.biz.id/blog/{{Slug}}">
-
-  <!-- Open Graph -->
-  <meta property="og:locale" content="id_ID">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="{{Meta Title}}">
-  <meta property="og:description" content="{{Meta Description}}">
-  <meta property="og:url" content="https://kontraktorsurabaya.biz.id/blog/{{Slug}}">
-  <meta property="og:site_name" content="Kontraktor Surabaya">
-  <meta property="og:image" content="https://kontraktorsurabaya.biz.id/assets/img/blog/{{Image1}}">
-  <meta property="og:image:type" content="image/webp">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="{{Image1 Alt}}">
-  <meta property="article:published_time" content="{{Published Time ISO}}">
-  <meta property="article:modified_time" content="{{Modified Time ISO}}">
-  <meta property="article:author" content="Erlang Sinatrya">
-  <meta property="article:section" content="{{Section}}">
-  <meta property="article:tag" content="{{Tag}}">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{Meta Title}}">
-  <meta name="twitter:description" content="{{Meta Description}}">
-  <meta name="twitter:image" content="https://kontraktorsurabaya.biz.id/assets/img/blog/{{Image1}}">
-
-  <link rel="icon" type="image/webp" href="../assets/img/favicon-logo.webp">
-  <link rel="apple-touch-icon" href="../assets/img/favicon-logo.webp">
-
-  <!-- Google Fonts: Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"></noscript>
-
-  <!-- Core & Vendor CSS -->
-  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/main.min.css">
-  <link rel="preload" href="../assets/vendor/bootstrap-icons/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.min.css"></noscript>
-  <link rel="preload" href="../assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="../assets/vendor/aos/aos.css"></noscript>
-  <link rel="preload" href="../assets/vendor/glightbox/css/glightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="../assets/vendor/glightbox/css/glightbox.min.css"></noscript>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
-
-  <!-- Schema Markup JSON-LD (LocalBusiness, Article, BreadcrumbList, FAQPage) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "GeneralContractor", "ProfessionalService"],
-        "@id": "https://kontraktorsurabaya.biz.id/#organization",
-        "name": "Kontraktor Surabaya",
-        "alternateName": "PT Kontraktor Surabaya Jaya",
-        "url": "https://kontraktorsurabaya.biz.id/",
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "https://kontraktorsurabaya.biz.id/#logo",
-          "url": "https://kontraktorsurabaya.biz.id/assets/img/logo-header.webp"
-        },
-        "image": [
-          "https://kontraktorsurabaya.biz.id/assets/img/hero/hero.webp",
-          "https://kontraktorsurabaya.biz.id/assets/img/logo-header.webp"
-        ],
-        "telephone": "+62088989643555",
-        "priceRange": "Rp 3.500.000 - Rp 10.000.000 per m²",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Jl. Raya Rungkut Madya No. 88, Rungkut",
-          "addressLocality": "Surabaya Timur",
-          "addressRegion": "Jawa Timur",
-          "postalCode": "60293",
-          "addressCountry": "ID"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": -7.3195,
-          "longitude": 112.7842
-        },
-        "areaServed": [
-          {"@type": "AdministrativeArea", "name": "Surabaya"},
-          {"@type": "AdministrativeArea", "name": "Sidoarjo"},
-          {"@type": "AdministrativeArea", "name": "Gresik"},
-          {"@type": "AdministrativeArea", "name": "Mojokerto"},
-          {"@type": "AdministrativeArea", "name": "Madura"}
-        ]
-      },
-      {
-        "@type": "Article",
-        "@id": "https://kontraktorsurabaya.biz.id/blog/{{Slug}}#article",
-        "headline": "{{H1 Title}}",
-        "description": "{{Meta Description}}",
-        "url": "https://kontraktorsurabaya.biz.id/blog/{{Slug}}",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://kontraktorsurabaya.biz.id/blog/{{Slug}}"
-        },
-        "datePublished": "{{Published Time ISO}}",
-        "dateModified": "{{Modified Time ISO}}",
-        "author": {
-          "@type": "Person",
-          "name": "Erlang Sinatrya",
-          "url": "https://kontraktorsurabaya.biz.id/tentang-kami",
-          "jobTitle": "Lead Project Engineer",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Kontraktor Surabaya"
-          }
-        },
-        "publisher": {
-          "@id": "https://kontraktorsurabaya.biz.id/#organization"
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://kontraktorsurabaya.biz.id/assets/img/blog/{{Image1}}",
-          "width": 1200,
-          "height": 630
-        },
-        "inLanguage": "id-ID",
-        "articleSection": ["{{Section}}"],
-        "keywords": ["{{Keywords}}"]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://kontraktorsurabaya.biz.id/" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://kontraktorsurabaya.biz.id/blog" },
-          { "@type": "ListItem", "position": 3, "name": "{{Short Title}}", "item": "https://kontraktorsurabaya.biz.id/blog/{{Slug}}" }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {{FAQ Items}}
-        ]
-      }
-    ]
-  }
-  </script>
-</head>
-<body class="blog-details-page">
-
-  <!-- Navbar -->
-  <!-- Breadcrumb Bar -->
-  <div class="breadcrumb-bar">
-    <div class="container">
-      <a href="/"><i class="bi bi-house-door-fill me-1"></i> Beranda</a>
-      <span class="separator"><i class="bi bi-chevron-right"></i></span>
-      <a href="/blog">Blog</a>
-      <span class="separator"><i class="bi bi-chevron-right"></i></span>
-      <span>{{Short Title}}</span>
-    </div>
-  </div>
-
-  <main class="main" id="main-content">
-    <section class="section pt-4 pb-5" style="background:var(--white);">
-      <div class="container">
-        <div class="article-layout">
-          <div class="article-main">
-
-            <h1 class="article-title" data-aos="fade-up">{{H1 Title}}</h1>
-
-            <div class="article-top-meta" data-aos="fade-up" data-aos-delay="100">
-              <div class="meta-author">
-                <img src="../assets/img/person/erlang.webp" alt="Erlang Sinatrya" onerror="this.src='../assets/img/favicon-logo.webp'">
-                <span>Erlang Sinatrya</span>
-              </div>
-              <span><i class="bi bi-calendar4-week text-gold"></i> {{Formatted Date}}</span>
-              <span><i class="bi bi-clock text-gold"></i> 5 menit baca</span>
-            </div>
-
-            <!-- Featured Image -->
-            <div class="featured-image-wrap" data-aos="zoom-in">
-              <img src="../assets/img/blog/{{Image1}}" alt="{{Image1 Alt}}" loading="lazy" decoding="async" onerror="this.src='../assets/img/hero/hero.webp'">
-              <div class="featured-caption">{{Image1 Alt}}</div>
-            </div>
-
-            <!-- Summary Box -->
-            <div class="summary-box" data-aos="fade-up">
-              <h3>Ringkasan Inti</h3>
-              <p><strong>Answer Capsule:</strong> {{Answer Capsule}}</p>
-              <ul>
-                {{Summary Bullet Points}}
-              </ul>
-            </div>
-
-            <!-- TOC Box -->
-            <div class="toc-box">
-              <button class="toc-toggle" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show')">
-                Daftar Isi Artikel <i class="bi bi-chevron-right"></i>
-              </button>
-              <div class="toc-content">
-                <ul id="auto-toc-list"></ul>
-              </div>
-            </div>
-
-            <!-- Article Body -->
-            <div class="article-body">
-              {{Intro Paragraph}}
-
-              <h2 id="{{id-1}}">1. {{Heading 1}}</h2>
-              {{Content 1}}
-
-              <h2 id="{{id-2}}">2. {{Heading 2}}</h2>
-              {{Content 2}}
-
-              <!-- In-Article Second Image -->
-              <figure class="body-figure" data-aos="fade-up">
-                <img src="../assets/img/blog/{{Image2}}" alt="{{Image2 Alt}}" loading="lazy" decoding="async">
-                <figcaption>{{Image2 Alt}}</figcaption>
-              </figure>
-
-              <h2 id="{{id-3}}">3. {{Heading 3}}</h2>
-              {{Content 3}}
-
-              <h2 id="{{id-4}}">4. {{Heading 4}}</h2>
-              {{Content 4}}
-
-              <h2 id="{{id-5}}">5. {{Heading 5}}</h2>
-              {{Content 5}}
-
-              <h2 id="{{id-6}}">6. {{Heading 6}}</h2>
-              {{Content 6}}
-
-              <blockquote class="article-quote">
-                <p>"{{Quote Text}}"</p>
-                <span class="quote-author">— Erlang Sinatrya, Lead Project Engineer Kontraktor Surabaya</span>
-              </blockquote>
-
-              <p class="mt-4">
-                {{Closing Paragraph with <a href="/galeri" class="fw-bold text-maroon">galeri proyek kami</a> dan link layanan}}
-              </p>
-
-              <!-- Centered High-Contrast Promo Banner -->
-              <a href="https://wa.me/62088989643555?text={{WA Text}}" target="_blank" class="promo-banner" data-aos="fade-up">
-                <img src="../assets/img/layanan/{{Relevant Service Banner}}" alt="{{Banner Alt}}" loading="lazy">
-                <div class="promo-overlay">
-                  <div class="promo-text">{{Banner Title}}</div>
-                  <div class="promo-subtext">{{Banner Subtext}}</div>
-                  <div class="promo-cta"><i class="bi bi-whatsapp"></i> Chat WhatsApp Sekarang</div>
-                </div>
-              </a>
-
-            </div> <!-- /article-body -->
-
-            <!-- Mini FAQ Accordion -->
-            <div class="article-faq" data-aos="fade-up">
-              <h3>Pertanyaan Seputar {{Topik}}</h3>
-              {{FAQ Items HTML with class .faq-mini-item, .faq-mini-question, .faq-mini-answer}}
-            </div>
-
-            <!-- Share Buttons -->
-            <div class="share-article-box" data-aos="fade-up">
-              <h4>Bagikan Artikel Ini</h4>
-              <div class="share-buttons-row">
-                <a href="#" target="_blank" class="share-btn whatsapp" data-share="whatsapp"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-                <a href="#" target="_blank" class="share-btn facebook" data-share="facebook"><i class="bi bi-facebook"></i> Facebook</a>
-                <a href="#" target="_blank" class="share-btn twitter" data-share="twitter"><i class="bi bi-twitter-x"></i> Twitter</a>
-                <a href="#" target="_blank" class="share-btn linkedin" data-share="linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a>
-              </div>
-            </div>
-
-            <!-- Tags Footer -->
-            <div class="article-tags-footer">
-              {{Tag Pills}}
-            </div>
-
-          </div> <!-- /article-main -->
-
-          <!-- Sidebar -->
-          <aside class="article-sidebar">
-            <div class="sidebar-author-card text-center">
-              <img src="../assets/img/person/erlang.webp" alt="Erlang Sinatrya" class="mx-auto d-block" onerror="this.src='../assets/img/favicon-logo.webp'">
-              <h4>Erlang Sinatrya</h4>
-              <div class="sidebar-social">
-                <a href="https://wa.me/62088989643555" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-              </div>
-              <p class="desc">
-                Erlang Sinatrya adalah Lead Project Engineer di Kontraktor Surabaya dengan keahlian khusus pada perancangan arsitektur, perhitungan estimasi RAB akurat, dan manajemen konstruksi di wilayah Jawa Timur.
-              </p>
-            </div>
-            <div class="sidebar-related">
-              <h4>Artikel Terkait</h4>
-              {{Related Items}}
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- Related Services -->
-    <!-- CTA Section -->
-  </main>
-
-  <!-- Footer -->
-
-  <!-- Standard Scripts -->
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-  <script src="../assets/vendor/aos/aos.js" defer></script>
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js" defer></script>
-  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-  <script src="../assets/js/main.js" defer></script>
-
-  <!-- Article Interactive Scripts -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const tocList = document.getElementById('auto-toc-list');
-      const headings = document.querySelectorAll('.article-body h2, .article-body h3');
-      headings.forEach(function (heading, index) {
-        if (!heading.id) heading.id = 'section-' + index;
-        const li = document.createElement('li');
-        if (heading.tagName === 'H3') li.style.paddingLeft = '16px';
-        const a = document.createElement('a');
-        a.href = '#' + heading.id;
-        a.textContent = heading.textContent;
-        li.appendChild(a);
-        if (tocList) tocList.appendChild(li);
-      });
-
-      document.querySelectorAll('.faq-mini-question').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          const item = btn.closest('.faq-mini-item');
-          if (item) item.classList.toggle('active');
-        });
-      });
-
-      const pageUrl = encodeURIComponent(window.location.href);
-      const pageTitle = encodeURIComponent(document.title);
-      const shareLinks = {
-        whatsapp: 'https://wa.me/?text=' + pageTitle + '%20' + pageUrl,
-        facebook: 'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl,
-        twitter: 'https://twitter.com/intent/tweet?url=' + pageUrl + '&text=' + pageTitle,
-        linkedin: 'https://www.linkedin.com/sharing/share-offsite/?url=' + pageUrl
-      };
-      document.querySelectorAll('[data-share]').forEach(function (btn) {
-        const type = btn.getAttribute('data-share');
-        if (shareLinks[type]) btn.setAttribute('href', shareLinks[type]);
-      });
-
-      var yearEl = document.getElementById('footer-year');
-      if (yearEl) yearEl.textContent = new Date().getFullYear();
-    });
-  </script>
-</body>
-</html>
-```
-
-## 3. Integrasi Wajib untuk Setiap Artikel Baru
-1. Daftarkan kartu artikel di **bagian teratas** grid artikel di [`blog.html`](file:///d:/TUGAS%20KULIAH/Project%20MKI/ProjectBootstrapAktif/kontraktorsurabaya/blog.html) dengan filter class yang sesuai (`filter-arsitek`, `filter-rumah`, `filter-bangunan`, `filter-renovasi`, `filter-interior`, `filter-rab`).
-2. Perbarui Schema JSON-LD `@type: "ItemList"` (`#articles`) di [`blog.html`](file:///d:/TUGAS%20KULIAH/Project%20MKI/ProjectBootstrapAktif/kontraktorsurabaya/blog.html) dengan menambahkan `ListItem` artikel baru di posisi teratas (`position: 1` dst) dan sesuaikan nilai `numberOfItems`.
-3. Tambahkan entri URL baru di [`sitemap.xml`](file:///d:/TUGAS%20KULIAH/Project%20MKI/ProjectBootstrapAktif/kontraktorsurabaya/sitemap.xml) lengkap dengan tag `<image:image>` dan perbarui `<lastmod>` halaman `/blog`.
-4. **JANGAN PERNAH** memodifikasi `main.css`, `main.min.css`, ataupun `main.js`.
+Dokumen ini adalah aturan arsitektur & markup HTML paten untuk seluruh halaman artikel blog (`blog/*.html`).
+**DILARANG KERAS** memodifikasi, memangkas class, atau berimprovisasi dengan struktur ini.
 
 ---
 
-## 4. Aturan Khusus Artikel Bertabel (`<table>`)
+## 1. STRUKTUR & KOMPONEN WAJIB ARTIKEL BLOG (`blog/*.html`)
 
-Jika artikel memuat elemen `<table>` (misal komparasi harga, simulasi anggaran, spesifikasi teknis):
+Setiap artikel blog baru **WAJIB** mengikuti komponen baku berikut:
 
-### A. Scoped CSS di `<head>`
+### A. Head & Schema JSON-LD
+- **CSS Preload**: Poppins Font, `bootstrap.min.css`, `main.min.css`, `bootstrap-icons`, `aos.css`, `glightbox.min.css`, `swiper-bundle.min.css`.
+- **Scoped Responsive Table CSS**:
 ```html
 <style>
-  .article-main {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    overflow-x: clip;
-  }
-  .table-responsive {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    border: 1px solid var(--cream-border);
-    border-radius: 12px;
-    margin-bottom: 1.25rem;
-  }
-  .table-responsive table {
-    margin-bottom: 0;
-  }
-  @media (max-width: 767.98px) {
-    .formula-box {
-      padding: 1.25rem 1rem !important;
-    }
-    .formula-box p {
-      font-size: 1.02rem !important;
-      word-break: break-word;
-    }
-  }
+  .article-main { width:100%; max-width:100%; min-width:0; overflow-x:clip; }
+  .table-responsive { width:100%; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--cream-border); border-radius:12px; margin-bottom:1.25rem; }
+  .table-responsive table { margin-bottom:0; }
+  @media(max-width:767.98px){ .formula-box { padding:1.25rem 1rem!important; } .formula-box p { font-size:1.02rem!important; word-break:break-word; } }
 </style>
 ```
+- **Schema JSON-LD**: Berisi 4 node (@graph): `LocalBusiness/GeneralContractor`, `Article`, `BreadcrumbList` (3 level: Beranda, Blog, Judul Artikel dengan properti `item`), dan `FAQPage`.
 
-### B. Standar Tag Tabel & Min-Width
-- Wadah pembungkus: `<div class="table-responsive my-4">`
-- Kelas tabel: `class="table table-bordered table-hover align-middle mb-0"`
-- Min-width tabel: `style="min-width: 640px;"` (5 kolom) atau `540px` (3 kolom)
-- Header `<thead>`: `class="table-dark" style="background:var(--maroon);"`
-- Tepat di bawah pembungkus tabel:
-  ```html
-  <small class="text-muted d-block mt-n2 mb-4 text-center d-md-none"><i class="bi bi-arrow-left-right me-1"></i>Geser tabel ke samping untuk melihat detail</small>
-  ```
+### B. Navbar Baku (Wajib Logo-Img 160x54)
+```html
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top" aria-label="Navigasi Utama">
+  <div class="container position-relative">
+    <a class="navbar-brand d-flex align-items-center" href="/" aria-label="Kontraktor Surabaya - Beranda">
+      <img src="../assets/img/logo-header.webp" alt="Logo Kontraktor Surabaya" class="logo-img" width="160" height="54" fetchpriority="high" onerror="this.style.display='none'">
+    </a>
+    <button class="navbar-toggler custom-toggler shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas" aria-controls="navOffcanvas" aria-label="Buka menu navigasi">
+      <span class="toggler-bar"></span><span class="toggler-bar"></span><span class="toggler-bar"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
+      <div class="offcanvas-header d-flex d-lg-none align-items-center justify-content-between">
+        <span class="drawer-title fw-bold text-maroon fs-6 mb-0" id="navOffcanvasLabel">Menu Navigasi</span>
+        <button type="button" class="btn-drawer-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Tutup navigasi"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-1 mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="/tentang-kami">Tentang Kami</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/layanan" id="layananDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Layanan</a>
+            <ul class="dropdown-menu border-0 shadow" aria-labelledby="layananDropdown">
+              <li><a class="dropdown-item" href="/layanan/jasa-arsitek-surabaya"><i class="bi bi-pencil-ruler me-2 text-maroon"></i>Jasa Arsitek</a></li>
+              <li><a class="dropdown-item" href="/layanan/kontraktor-rumah-surabaya"><i class="bi bi-house-door-fill me-2 text-maroon"></i>Kontraktor Rumah</a></li>
+              <li><a class="dropdown-item" href="/layanan/kontraktor-bangunan-surabaya"><i class="bi bi-building me-2 text-maroon"></i>Kontraktor Bangunan</a></li>
+              <li><a class="dropdown-item" href="/layanan/jasa-renovasi-surabaya"><i class="bi bi-tools me-2 text-maroon"></i>Jasa Renovasi</a></li>
+              <li><a class="dropdown-item" href="/layanan/jasa-desain-interior-surabaya"><i class="bi bi-palette-fill me-2 text-maroon"></i>Desain Interior</a></li>
+              <li><a class="dropdown-item" href="/layanan/rab-estimasi-biaya-surabaya"><i class="bi bi-calculator-fill me-2 text-maroon"></i>RAB &amp; Estimasi Biaya</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/blog" aria-current="page">Blog</a></li>
+        </ul>
+        <div class="d-none d-lg-flex align-items-center mt-3 mt-lg-0">
+          <a class="nav-link nav-cta d-inline-flex align-items-center gap-2" id="nav-wa-cta" href="https://wa.me/62088989643555?text=Halo%2C+saya+ingin+konsultasi+proyek" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-telephone-fill"></i> Hubungi Kami
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+```
 
+### C. Urutan Konten Utama (`article-main`)
+1. **Title & Meta**: `h1.article-title`, `.article-top-meta` (Foto Erlang Sinatrya + Tanggal + Waktu baca).
+2. **Featured Image**: `.featured-image-wrap` + `.featured-caption`.
+3. **Summary Box**: `.summary-box` (Answer Capsule + 5 bullet points).
+4. **Auto-TOC Box**: `.toc-box` dengan tombol toggle dan list `#auto-toc-list`.
+5. **Article Body**:
+   - Paragraf pengantar, H2 bernomor (`id="slug-heading"`), H3 jika ada.
+   - **Tabel Responsif** (jika ada): Dibungkus `<div class="table-responsive my-4">` + `<table class="table table-bordered table-hover align-middle mb-0" style="min-width:640px;">` + `<thead class="table-dark" style="background:var(--maroon);">` + helper teks mobile `<small class="text-muted d-block mt-n2 mb-4 text-center d-md-none"><i class="bi bi-arrow-left-right me-1"></i>Geser tabel ke samping untuk melihat detail</small>`.
+   - In-Article Image 2: `.featured-image-wrap.my-4`.
+   - Quote: `<blockquote class="article-quote">"..."<cite>&mdash; Erlang Sinatrya, Lead Project Engineer Kontraktor Surabaya</cite></blockquote>`.
+   - Internal linking: Mengarah ke `/layanan/...` dan `/galeri`.
+   - Promo Banner: `<a href="https://wa.me/..." target="_blank" class="promo-banner" data-aos="fade-up"><img src="../assets/img/layanan/..." alt="..."><div class="promo-overlay"><div class="promo-text">...</div><div class="promo-subtext">...</div><div class="promo-cta"><i class="bi bi-whatsapp"></i> Chat WhatsApp Sekarang</div></div></a>`.
+6. **FAQ Accordion**: `.article-faq` dengan 3-4 item `.faq-mini-item` (`.faq-mini-question` + `.faq-mini-answer`).
+7. **Share Box & Tags Footer**: `.share-article-box` (WA, FB, X, LinkedIn) & `.article-tags-footer` (`.tag-pill`).
+
+### D. Sidebar Paten (Author + Verified Images)
+```html
+<aside class="article-sidebar">
+  <div class="sidebar-author-card text-center">
+    <img src="../assets/img/person/erlang.webp" alt="Erlang Sinatrya" class="mx-auto d-block" onerror="this.src='../assets/img/favicon-logo.webp'">
+    <h4>Erlang Sinatrya</h4>
+    <div class="sidebar-social">
+      <a href="https://wa.me/62088989643555" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    </div>
+    <p class="desc">Erlang Sinatrya adalah Lead Project Engineer di Kontraktor Surabaya dengan keahlian khusus pada perancangan arsitektur, estimasi RAB akurat, dan manajemen konstruksi di Jawa Timur.</p>
+  </div>
+  <div class="sidebar-related">
+    <h4>Artikel Terkait</h4>
+    <!-- HANYA GUNAKAN GAMBAR YANG BENAR-BENAR ADA SECARA FISIK DI ASSETS/IMG/BLOG/ -->
+    <a href="/blog/slug-artikel" class="related-item">
+      <img src="../assets/img/blog/nama-gambar-valid.webp" alt="Judul">
+      <div><h5>Judul Ringkas</h5><span>Tanggal</span></div>
+    </a>
+  </div>
+</aside>
+```
+
+### E. Layanan Terkait, CTA Card, & Footer 4 Kolom
+- **Related Services**: `<section class="related-articles-section"><div class="container"><h3 class="related-heading">...</h3><div class="related-grid"><article class="related-card"><a href="..."><img src="../assets/img/layanan/..." loading="lazy"></a><div class="related-card-content"><h4><a href="...">...</a></h4><p>...</p><a href="..." class="related-read-more">Lihat Layanan <i class="bi bi-arrow-right"></i></a></div></article></div></div></section>`.
+- **CTA Section**: `<section id="cta" class="py-5" style="background:var(--cream);"><div class="container py-lg-4"><div class="cta-card" data-aos="zoom-in"><div class="cta-shape-1"></div><div class="cta-shape-2"></div><div class="cta-shape-3"></div><div class="cta-content-wrap"><span class="cta-label"><i class="bi bi-tools"></i> ...</span><h2 class="cta-title">...</h2><p class="cta-desc">...</p><div class="d-flex justify-content-center"><a id="cta-wa-primary" href="..." class="btn-gold" target="_blank"><i class="bi bi-whatsapp"></i> Konsultasi Proyek via WhatsApp</a></div></div></div></div></section>`.
+- **Footer**: `<footer id="footer" role="contentinfo">` dengan 4 kolom (`.footer-brand`, Layanan, Navigasi, Area Layanan & Artikel) dan `.footer-bottom`.
+- **Floating WA & Scroll Top**: `<a class="wa-float" id="wa-float">` & `<button class="scroll-top" id="scroll-top-btn"><i class="bi bi-chevron-up"></i></button>`.
+
+---
+
+## 2. INTEGRASI SISTEMIK WAJIB SETIAP POSTING ARTIKEL
+1. **`sitemap.xml`**: Tambahkan URL format bersih tanpa `<image:image>` dan update `<lastmod>` pada `https://kontraktorsurabaya.biz.id/blog`.
+2. **`blog.html`**: Tambahkan Card artikel baru di urutan pertama `.portfolio-grid` dan update `ItemList` Schema JSON-LD (`numberOfItems: N`, posisi artikel 1..N).
+3. **`llms.txt`**: Tambahkan artikel baru ke dalam klaster topiknya di file `llms.txt` (`- [Judul](URL): Deskripsi`).
+4. **Validasi Gambar Fisik**: Seluruh gambar (`<img src="...">`) **WAJIB diverifikasi ada secara fisik** di `assets/img/blog/` atau `assets/img/layanan/` sebelum commit.

@@ -1,4 +1,4 @@
-﻿# SEO Strategy & Keyword Research — Kontraktor Surabaya
+# SEO Strategy & Keyword Research — Kontraktor Surabaya
 
 **Website:** `kontraktorsurabaya.biz.id`
 **Keyword Utama:** **Kontraktor Surabaya**
@@ -578,3 +578,16 @@ Format: .webp
 11. GEO = **entity + first-party evidence + project data + local relevance**
 12. Conversion utama = **WhatsApp 088989643555**
 13. Visual identity = **Maroon + clean architectural/premium look**
+
+---
+
+# 41. AEO & GEO Optimization (LLMs.txt & AI Crawlers)
+
+Untuk memastikan visibilitas pada Generative AI (ChatGPT Search, Perplexity AI, Google Gemini, Claude, Apple Intelligence):
+
+1. **`llms.txt` Standard**:
+   - File markdown terstruktur di root domain (`https://kontraktorsurabaya.biz.id/llms.txt`) yang menyajikan ringkasan profil bisnis, legalitas, rentang harga, tautan 6 pilar layanan, FAQ terstruktur, serta seluruh direktori 45+ artikel blog per klaster topik.
+   - Wajib diperbarui setiap ada artikel blog baru yang diunggah.
+2. **`robots.txt` AI Crawler Inclusivity**:
+   - Membuka akses perayapan penuh (`Allow: /`) bagi seluruh crawler AI: `GPTBot`, `ChatGPT-User`, `OAI-SearchBot`, `Google-Extended`, `ClaudeBot`, `PerplexityBot`, `Applebot`, `Applebot-Extended`, `Meta-ExternalAgent`, `DeepSeekBot`, `CCBot`, dan lainnya.
+
