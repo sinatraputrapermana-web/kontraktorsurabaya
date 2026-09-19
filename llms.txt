@@ -65,6 +65,7 @@ Berikut adalah direktori panduan teknis, studi kasus biaya, dan analisis arsitek
 
 ### Klaster: RAB &amp; Biaya
 
+- [Simulasi RAB Bangun Kos 2 Lantai Surabaya](https://kontraktorsurabaya.biz.id/blog/simulasi-rab-bangun-kos-2-lantai-surabaya): Simulasi faktor yang menentukan RAB dan potensi BEP investasi kos-kosan 2 lantai di Surabaya. Konsultasikan rencana investasi Anda bersama kami.
 - [Cara Membaca Surat Penawaran Harga Kontraktor](https://kontraktorsurabaya.biz.id/blog/cara-membaca-sph-surat-penawaran-kontraktor): Tips membaca dan menganalisis Surat Penawaran Harga (SPH) dari kontraktor agar terhindar dari biaya siluman.
 - [Rumus Cara Menghitung Biaya Bangun Rumah per m2](https://kontraktorsurabaya.biz.id/blog/cara-menghitung-biaya-bangun-rumah-permeter): Bingung menyusun budget awal bangun rumah? Pelajari rumus cara menghitung biaya bangun rumah per meter persegi sebelum konsultasi ke arsitek.
 - [Simulasi Biaya Bangun Ruko 2 Lantai Mojokerto](https://kontraktorsurabaya.biz.id/blog/biaya-bangun-ruko-2-lantai-mojokerto): Simulasi faktor yang menentukan estimasi biaya bangun ruko 2 lantai di area komersial Mojokerto. Rincian struktur, arsitektur, dan utilitas usaha.

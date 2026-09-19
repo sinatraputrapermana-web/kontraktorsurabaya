@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-09-18T08:00:00+07:00</lastmod>
+    <lastmod>2026-09-19T08:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -826,6 +826,14 @@
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog/tips-menata-ruang-keluarga-sempit-lega</loc>
     <lastmod>2026-09-18T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Real Article 48 - 19 Sep 2026 -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/simulasi-rab-bangun-kos-2-lantai-surabaya</loc>
+    <lastmod>2026-09-19T08:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
