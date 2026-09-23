@@ -29,21 +29,54 @@
   <link rel="apple-touch-icon" href="assets/img/favicon-logo.webp">
 
   <!-- Google Fonts: Poppins (High-Performance Async Preload) -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=optional">
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=optional"
     media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=optional">
   </noscript>
 
-  <!-- Critical Core CSS -->
-  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/main.min.css">
+  <!-- Preload LCP-critical resources (logo=LCP element on mobile) -->
+  <link rel="preload" as="image" href="assets/img/logo-header.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/hero/hero.webp" fetchpriority="high">
+
+  <!-- Core CSS: async non-render-blocking (eliminates 2.9s render delay) -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"></noscript>
+  <link rel="preload" href="assets/css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/css/main.min.css"></noscript>
+
+  <!-- Critical Inline CSS: above-the-fold (navbar + hero) for instant first paint -->
+  <style id="critical-css">
+    *,*::before,*::after{box-sizing:border-box}
+    body{font-family:"Poppins",sans-serif;margin:0;background:#F9F6F0;color:#2C2523;overflow-x:clip;-webkit-font-smoothing:antialiased;line-height:1.75}
+    :root{--maroon:#721422;--maroon-dark:#4A0A14;--cream:#F9F6F0;--cream-text:#FAF5ED;--white:#FFFFFF;--gray-800:#2C2523;--font-body:"Poppins",sans-serif;--transition:all 0.35s cubic-bezier(0.4,0,0.2,1)}
+    nav.navbar{position:fixed;top:0;left:0;right:0;z-index:999;padding:.75rem 0;transition:background .35s,box-shadow .35s;background:transparent}
+    nav.navbar.scrolled{background:rgba(74,10,20,.97);box-shadow:0 4px 24px rgba(88,17,26,.22)}
+    .navbar-brand img.logo-img{height:54px;width:160px;object-fit:contain;display:block}
+    .fixed-top{position:fixed!important;top:0;right:0;left:0;z-index:1030}
+    .container{width:100%;padding-right:1rem;padding-left:1rem;margin-right:auto;margin-left:auto;max-width:1200px}
+    .d-flex{display:flex!important}.position-relative{position:relative!important}
+    #hero{min-height:100vh;position:relative;display:flex;align-items:center;background:linear-gradient(135deg,#4A0A14 0%,#721422 60%,#8F1B2D 100%);overflow:hidden}
+    .hero-bg{position:absolute;inset:0;background:url('assets/img/hero/hero.webp') center/cover no-repeat;opacity:.18;z-index:0}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(74,10,20,.92) 0%,rgba(114,20,34,.82) 100%);z-index:1}
+    .hero-container{position:relative;z-index:2}
+    .hero-content{z-index:2}
+    .hero-title{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;line-height:1.18;color:#fff;margin-bottom:1.25rem}
+    .hero-desc{font-size:1.08rem;color:rgba(250,245,237,.85);max-width:560px;line-height:1.75;margin-bottom:1.5rem}
+    .hero-building-img{width:100%;height:auto;display:block}
+    .hero-bottom-curve{position:absolute;bottom:-1px;left:0;right:0;z-index:3;line-height:0}
+    .hero-bottom-curve svg{display:block;width:100%;height:240px}
+    .custom-toggler{background:transparent;border:none;padding:.4rem;cursor:pointer}
+    .toggler-bar{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px}
+    .nav-link{color:rgba(255,255,255,.88);font-weight:500;padding:.5rem .8rem;text-decoration:none;transition:color .2s}
+  </style>
 
   <!-- Non-Critical Vendor CSS (Deferred Loading to Eliminate Render-Blocking) -->
   <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" as="style"
@@ -426,7 +459,7 @@
       <div class="row align-items-center min-vh-100-hero">
 
         <!-- Left: SEO Text & Actions -->
-        <div class="col-lg-6 hero-content" data-aos="fade-right">
+        <div class="col-lg-6 hero-content">
           <div class="hero-badge">
             <i class="bi bi-shield-fill-check text-gold"></i>
             <span>Kontraktor Bergaransi Resmi</span>
@@ -464,7 +497,7 @@
         </div>
 
         <!-- Right: Building Cutout Visual (Centered & Elevated) -->
-        <div class="col-lg-6 hero-building-col" data-aos="fade-left" data-aos-delay="150">
+        <div class="col-lg-6 hero-building-col">
           <div class="hero-building-showcase">
             <img src="assets/img/hero/hero.webp" alt="Pembangunan rumah dan gedung modern oleh Kontraktor Surabaya"
               class="hero-building-img" loading="eager" fetchpriority="high" width="900" height="700">
@@ -476,8 +509,8 @@
 
     <!-- Bottom Multi-Layered Waves Divider (High & Deep Multi-Wave) -->
     <div class="hero-bottom-curve" aria-hidden="true">
-      <svg viewBox="0 0 1440 240" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-        shape-rendering="geometricPrecision">
+      <svg viewBox="0 0 1440 240" width="100%" height="240" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        shape-rendering="geometricPrecision" style="display:block">
         <path d="M0,150 C200,60 400,200 680,110 C960,30 1200,170 1440,40 L1440,240 L0,240 Z"
           fill="rgba(249, 246, 240, 0.22)"></path>
         <path d="M0,170 C240,80 460,215 760,130 C1040,45 1260,185 1440,65 L1440,240 L0,240 Z"
@@ -1541,7 +1574,32 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <!-- Swiper: deferred after page idle to eliminate 26KB unused JS on initial load -->
+  <script>
+    (function(){
+      function loadSwiper(){
+        var s=document.createElement('script');
+        s.src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+        s.onload=function(){
+          // Reinit testimonials slider after async Swiper load
+          var el=document.querySelector('.testimonials-slider');
+          if(el&&typeof Swiper!=='undefined'&&!el.swiper){
+            new Swiper('.testimonials-slider',{speed:600,loop:true,
+              autoplay:{delay:5000,disableOnInteraction:false},
+              slidesPerView:1,spaceBetween:24,
+              pagination:{el:'.swiper-pagination',type:'bullets',clickable:true},
+              breakpoints:{768:{slidesPerView:2,spaceBetween:24},1200:{slidesPerView:3,spaceBetween:28}}});
+          }
+        };
+        document.head.appendChild(s);
+      }
+      if('requestIdleCallback' in window){
+        requestIdleCallback(loadSwiper,{timeout:2000});
+      } else {
+        window.addEventListener('load',function(){setTimeout(loadSwiper,500);});
+      }
+    })();
+  </script>
 
   <!-- Main JS -->
   <script src="assets/js/main.js" defer></script>

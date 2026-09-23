@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Kontraktor Surabaya",
+  "alternateName": "Jasa Kontraktor Surabaya Profesional",
+  "url": "https://kontraktorsurabaya.biz.id/",
+  "description": "Jasa kontraktor Surabaya untuk pembangunan rumah, bangunan komersial, renovasi, arsitektur dan desain interior berbasis Surabaya Timur, Jawa Timur.",
+  "inLanguage": "id-ID",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kontraktor Surabaya",
+    "url": "https://kontraktorsurabaya.biz.id/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kontraktorsurabaya.biz.id/assets/img/logo-header.webp"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+62088989643555",
+      "contactType": "customer service",
+      "areaServed": "ID",
+      "availableLanguage": "Indonesian"
+    },
+    "areaServed": [
+      {"@type": "AdministrativeArea", "name": "Surabaya"},
+      {"@type": "AdministrativeArea", "name": "Sidoarjo"},
+      {"@type": "AdministrativeArea", "name": "Gresik"},
+      {"@type": "AdministrativeArea", "name": "Mojokerto"}
+    ],
+    "sameAs": [
+      "https://kontraktorsurabaya.biz.id/"
+    ]
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://kontraktorsurabaya.biz.id/blog?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Kontraktor Surabaya",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Layanan Jasa Konstruksi Surabaya",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Jasa Kontraktor Rumah Surabaya", "url": "https://kontraktorsurabaya.biz.id/layanan/kontraktor-rumah-surabaya"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Jasa Arsitek Surabaya", "url": "https://kontraktorsurabaya.biz.id/layanan/jasa-arsitek-surabaya"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Jasa Renovasi Surabaya", "url": "https://kontraktorsurabaya.biz.id/layanan/jasa-renovasi-surabaya"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desain Interior Surabaya", "url": "https://kontraktorsurabaya.biz.id/layanan/jasa-desain-interior-surabaya"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "RAB & Estimasi Biaya", "url": "https://kontraktorsurabaya.biz.id/layanan/rab-estimasi-biaya-surabaya"}}
+      ]
+    }
+  }
+}
