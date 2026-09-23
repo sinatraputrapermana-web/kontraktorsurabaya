@@ -43,7 +43,7 @@
 
   <!-- Preload LCP-critical resources (logo=LCP element on mobile) -->
   <link rel="preload" as="image" href="assets/img/logo-header.webp" fetchpriority="high">
-  <link rel="preload" as="image" href="assets/img/hero/hero.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/hero/hero.webp" media="(min-width: 992px)" fetchpriority="high">
   <!-- Preload Bootstrap Icons WOFF2 to prevent CLS from deferred icon font -->
   <link rel="preload" as="font" type="font/woff2" href="assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" crossorigin>
 
@@ -135,7 +135,7 @@
       .hero-city-chip{font-size:.74rem;padding:.22rem .72rem}
       .hero-action-btns{justify-content:center;flex-direction:column;width:100%;max-width:360px;margin:0 auto;gap:.75rem!important}
       .hero-action-btns .btn-hero-cta,.hero-action-btns .btn-hero-outline{width:100%;justify-content:center;padding:.82rem 1.4rem;font-size:.88rem}
-      .hero-building-col{padding-top:0;padding-bottom:85px;margin-top:0}
+      .hero-building-col{display:none!important}
       .hero-bottom-curve svg{height:140px}
     }
     /* ── CLS Fix: Reserve space for Bootstrap Icons before font loads ── */
