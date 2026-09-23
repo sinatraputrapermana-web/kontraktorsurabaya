@@ -23,7 +23,7 @@
     cacheSectionOffsets();
   }, { passive: true });
 
-  /* ── Cache Section Offsets for Fast ScrollSpy (Prevents Layout Thrashing) ── */
+  /* ── Cache Section Offsets for Fast ScrollSpy (Deferred to Idle to Prevent Forced Reflow) ── */
   let cachedSections = [];
   function cacheSectionOffsets() {
     if (!heroAnchor) return;
@@ -37,11 +37,19 @@
     });
   }
 
-  // Initial cache after DOM & styles ready
+  function scheduleCacheSectionOffsets() {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(cacheSectionOffsets, { timeout: 3000 });
+    } else {
+      setTimeout(cacheSectionOffsets, 1500);
+    }
+  }
+
+  // Initial cache after DOM & styles ready, deferred to idle
   if (document.readyState === "complete") {
-    cacheSectionOffsets();
+    scheduleCacheSectionOffsets();
   } else {
-    window.addEventListener("load", cacheSectionOffsets, { passive: true });
+    window.addEventListener("load", scheduleCacheSectionOffsets, { passive: true });
   }
 
   /* ── Unified High-Performance Scroll Handler (requestAnimationFrame) ── */
@@ -63,7 +71,11 @@
     });
 
     // 2. Active Nav Link on Scroll (Homepage only)
-    if (heroAnchor && cachedSections.length > 0) {
+    if (heroAnchor) {
+      if (cachedSections.length === 0) {
+        cacheSectionOffsets();
+      }
+      if (cachedSections.length > 0) {
       const navLinks = document.querySelectorAll(".nav-link[href^='#']");
       if (scrollY < 180) {
         navLinks.forEach((l) => l.classList.remove("active"));
@@ -82,6 +94,7 @@
         }
       }
     }
+  }
 
     // 3. Hero Parallax — ONLY ON DESKTOP (Disabled on mobile to ensure 60fps smooth scroll)
     if (isDesktop && heroBg && scrollY < 900) {

@@ -49,9 +49,70 @@
   <!-- AI Agent Discoverability (ARD / Lighthouse Specification) -->
   <link rel="ai-catalog" type="application/json" href="/.well-known/ai-catalog.json">
 
-  <!-- Critical Core CSS -->
-  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/main.min.css">
+  <!-- Core CSS: async non-render-blocking with noscript fallback -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"></noscript>
+  <link rel="preload" href="assets/css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/css/main.min.css"></noscript>
+
+  <!-- Airtight Critical Inline CSS: above-the-fold instant paint, 0 CLS, guaranteed no offcanvas leakage -->
+  <style id="critical-css">
+    :root{--maroon:#721422;--maroon-dark:#4A0A14;--cream:#F9F6F0;--cream-text:#FAF5ED;--gold:#D4AF37;--white:#FFFFFF;--gray-800:#2C2523}
+    *,*::before,*::after{box-sizing:border-box}
+    body{font-family:"Poppins",system-ui,-apple-system,sans-serif;margin:0;background:#F9F6F0;color:#2C2523;overflow-x:clip;-webkit-font-smoothing:antialiased;line-height:1.75}
+    a{text-decoration:none;color:inherit}
+    .container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+    .position-relative{position:relative!important}
+    .text-gold{color:#D4AF37!important}
+    #navbar{position:fixed;top:0;left:0;right:0;z-index:1030;padding:.75rem 0;background:transparent;transition:background .35s,box-shadow .35s}
+    #navbar .container{display:flex;align-items:center;justify-content:space-between}
+    .navbar-brand{display:flex;align-items:center;text-decoration:none}
+    .navbar-brand img.logo-img{width:160px;height:54px;object-fit:contain;display:block}
+    @media(min-width:992px){
+      .navbar-toggler{display:none!important}
+      #navOffcanvas{display:flex!important;position:static!important;visibility:visible!important;width:auto!important;height:auto!important;background:transparent!important;border:none!important;box-shadow:none!important;transform:none!important;flex-grow:1!important}
+      #navOffcanvas .offcanvas-header{display:none!important}
+      #navOffcanvas .offcanvas-body{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;padding:0!important;width:100%!important}
+      .navbar-nav{display:flex!important;flex-direction:row!important;align-items:center!important;list-style:none!important;margin:0 auto!important;padding:0!important;gap:.35rem!important}
+      .nav-item{position:relative}
+      .nav-link{color:rgba(255,255,255,.88)!important;font-weight:500;font-size:.95rem;padding:.5rem .85rem!important;display:block;transition:color .2s}
+      .nav-link:hover,.nav-link.active{color:#FFF!important}
+      .dropdown-menu{display:none;position:absolute;top:100%;left:0;z-index:1000;background:#fff;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.12);min-width:230px;padding:.5rem;list-style:none;margin:0}
+      .nav-item.dropdown:hover .dropdown-menu{display:flex!important;flex-direction:column!important}
+      .d-lg-none{display:none!important}
+      .d-lg-flex{display:flex!important}
+      .d-none{display:none!important}
+      .nav-cta{background:#D4AF37!important;color:#4A0A14!important;font-weight:600;border-radius:50px;padding:.45rem 1.15rem!important;display:inline-flex!important;align-items:center;gap:.5rem;font-size:.9rem}
+    }
+    @media(max-width:991.98px){
+      .navbar-toggler{display:block!important;background:transparent;border:none;padding:.4rem;cursor:pointer}
+      .toggler-bar{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px}
+      #navOffcanvas:not(.show){display:none!important;visibility:hidden!important}
+      .d-lg-none{display:flex!important}
+      .d-lg-flex{display:none!important}
+    }
+    #hero{min-height:100vh;position:relative;display:flex;align-items:center;background:linear-gradient(135deg,#4A0A14 0%,#721422 60%,#8F1B2D 100%);overflow:hidden}
+    .hero-bg{position:absolute;inset:0;background:url('assets/img/hero/hero.webp') center/cover no-repeat;opacity:.18;z-index:0}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(74,10,20,.92) 0%,rgba(114,20,34,.82) 100%);z-index:1}
+    .hero-container{position:relative;z-index:2;width:100%}
+    .min-vh-100-hero{min-height:100vh;display:flex;align-items:center;flex-wrap:wrap;padding-top:85px;padding-bottom:85px;margin-left:-15px;margin-right:-15px}
+    .col-lg-6{width:100%;padding-left:15px;padding-right:15px}
+    @media(min-width:992px){.col-lg-6{width:50%;flex:0 0 50%}}
+    .hero-badge{display:inline-flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.12);border:1px solid rgba(212,175,55,.4);padding:.35rem .9rem;border-radius:50px;color:#FAF5ED;font-size:.84rem;margin-bottom:1.1rem}
+    .hero-title{font-size:clamp(1.9rem,4.2vw,3.2rem);font-weight:800;line-height:1.18;color:#FFF;margin-top:0;margin-bottom:1.25rem}
+    .hero-title .highlight{color:#D4AF37}
+    .hero-desc{font-size:1.05rem;color:rgba(250,245,237,.88);max-width:560px;line-height:1.75;margin-top:0;margin-bottom:1.5rem}
+    .hero-location-chips{margin-bottom:1.5rem;font-size:.85rem;color:rgba(250,245,237,.85)}
+    .hero-chips-wrap{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
+    .hero-city-chip{background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.15);padding:.2rem .65rem;border-radius:50px;font-size:.8rem}
+    .hero-action-btns{display:flex;flex-wrap:wrap;gap:.85rem;align-items:center}
+    .btn-hero-cta{background:#D4AF37;color:#4A0A14!important;font-weight:700;font-size:.92rem;padding:.75rem 1.6rem;border-radius:50px;display:inline-flex;align-items:center;gap:.5rem;box-shadow:0 4px 15px rgba(212,175,55,.35)}
+    .btn-hero-outline{border:1.5px solid rgba(255,255,255,.65);color:#FFF!important;font-weight:600;font-size:.92rem;padding:.75rem 1.5rem;border-radius:50px;display:inline-flex;align-items:center;gap:.5rem}
+    .hero-building-showcase{text-align:center}
+    .hero-building-img{width:100%;max-width:900px;height:auto;aspect-ratio:900/700;display:block;margin:0 auto}
+    .hero-bottom-curve{position:absolute;bottom:-1px;left:0;right:0;z-index:3;line-height:0}
+    .hero-bottom-curve svg{display:block;width:100%;height:240px}
+  </style>
 
 
   <!-- Non-Critical Vendor CSS (Deferred Loading to Eliminate Render-Blocking) -->
@@ -729,7 +790,7 @@
         </div>
 
         <!-- Swipe Hint Indicator (Mobile Only) -->
-        <div class="proses-swipe-hint d-md-none text-center text-muted small mt-3">
+        <div class="proses-swipe-hint d-md-none text-center small mt-3" style="color: #4A3E3D; font-weight: 500;">
           <i class="bi bi-arrow-left-right text-maroon me-1"></i> Geser ke samping untuk melihat langkah selanjutnya
           &rarr;
         </div>
