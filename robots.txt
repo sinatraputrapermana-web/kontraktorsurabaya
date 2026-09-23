@@ -107,5 +107,6 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# ════ SITEMAP DIRECTIVE ════
+# ════ SITEMAP & AGENTMAP DIRECTIVES ════
 Sitemap: https://kontraktorsurabaya.biz.id/sitemap.xml
+Agentmap: https://kontraktorsurabaya.biz.id/.well-known/ai-catalog.json

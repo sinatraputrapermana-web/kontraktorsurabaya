@@ -496,6 +496,10 @@ section {
     transform: translateY(0);
   }
 
+  #navbar .offcanvas-header {
+    display: none !important;
+  }
+
   #navbar .offcanvas {
     position: static !important;
     display: flex !important;
