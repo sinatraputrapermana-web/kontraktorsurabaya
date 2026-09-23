@@ -133,6 +133,7 @@
       offset: 50,
       debounceDelay: 50,
       throttleDelay: 99,
+      disable: window.innerWidth < 768,
     });
   }
 
@@ -152,7 +153,7 @@
     new PureCounter();
   }
 
-  /* ── Portfolio / Blog Isotope Filter ── */
+  /* ── Portfolio / Blog Isotope Filter (Deferred via IntersectionObserver) ── */
   const isotopeGrid = document.querySelector(".portfolio-grid");
   if (isotopeGrid && typeof Isotope !== "undefined") {
     let iso;
@@ -171,10 +172,24 @@
       });
     };
 
-    if (typeof imagesLoaded !== "undefined") {
-      imagesLoaded(isotopeGrid, initIsotope);
+    if ("IntersectionObserver" in window) {
+      const isoObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          if (typeof imagesLoaded !== "undefined") {
+            imagesLoaded(isotopeGrid, initIsotope);
+          } else {
+            initIsotope();
+          }
+          isoObserver.disconnect();
+        }
+      }, { rootMargin: "300px" });
+      isoObserver.observe(isotopeGrid);
     } else {
-      initIsotope();
+      if (typeof imagesLoaded !== "undefined") {
+        imagesLoaded(isotopeGrid, initIsotope);
+      } else {
+        initIsotope();
+      }
     }
   }
 
