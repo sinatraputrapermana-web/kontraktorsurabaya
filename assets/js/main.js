@@ -15,12 +15,12 @@
 
   let isTicking = false;
   let lastScrollY = 0;
-  let isDesktop = window.innerWidth >= 992;
+  let isDesktop = window.matchMedia ? window.matchMedia("(min-width: 992px)").matches : true;
 
   // Window resize handler to update desktop status
   window.addEventListener("resize", () => {
-    isDesktop = window.innerWidth >= 992;
-    cacheSectionOffsets();
+    isDesktop = window.matchMedia ? window.matchMedia("(min-width: 992px)").matches : true;
+    scheduleCacheSectionOffsets();
   }, { passive: true });
 
   /* ── Cache Section Offsets for Fast ScrollSpy (Deferred to Idle to Prevent Forced Reflow) ── */
@@ -71,7 +71,7 @@
     });
 
     // 2. Active Nav Link on Scroll (Homepage only)
-    if (heroAnchor) {
+    if (heroAnchor && scrollY > 100) {
       if (cachedSections.length === 0) {
         cacheSectionOffsets();
       }
@@ -112,9 +112,11 @@
     }
   }, { passive: true });
 
-  // Initial trigger
-  lastScrollY = window.scrollY;
-  onScrollTick();
+  // Initial trigger only if restored after scroll
+  if (window.scrollY > 50) {
+    lastScrollY = window.scrollY;
+    onScrollTick();
+  }
 
   /* ── Back to Top Click ── */
   bttElements.forEach((btn) => {
@@ -133,7 +135,7 @@
       offset: 50,
       debounceDelay: 50,
       throttleDelay: 99,
-      disable: window.innerWidth < 768,
+      disable: () => window.matchMedia ? window.matchMedia("(max-width: 767.98px)").matches : false,
     });
   }
 

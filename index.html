@@ -44,8 +44,6 @@
   <!-- Preload LCP-critical resources (logo=LCP element on mobile) -->
   <link rel="preload" as="image" href="assets/img/logo-header.webp" fetchpriority="high">
   <link rel="preload" as="image" href="assets/img/hero/hero.webp" media="(min-width: 992px)" fetchpriority="high">
-  <!-- Preload Bootstrap Icons WOFF2 to prevent CLS from deferred icon font -->
-  <link rel="preload" as="font" type="font/woff2" href="assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" crossorigin>
 
   <!-- AI Agent Discoverability (ARD / Lighthouse Specification) -->
   <link rel="ai-catalog" type="application/json" href="/.well-known/ai-catalog.json">
@@ -108,38 +106,43 @@
     .gap-3{gap:1rem!important}
     .min-vh-100-hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;flex-wrap:wrap;padding-top:85px;padding-bottom:85px;margin-left:-15px;margin-right:-15px}
     .col-lg-6{width:100%;padding-left:15px;padding-right:15px}
-    @media(min-width:992px){.col-lg-6{width:50%;flex:0 0 50%}}
+    @media(min-width:992px){
+      .col-lg-6{width:50%;flex:0 0 50%}
+      .hero-building-col{display:flex!important;align-items:flex-end!important;justify-content:center;margin-top:45px;transform:translateY(35px)}
+      .hero-building-img{width:100%;max-width:850px;height:auto;aspect-ratio:900/700;display:block;margin:0 auto;filter:drop-shadow(0 20px 35px rgba(0,0,0,0.32))}
+    }
     .hero-content{position:relative;z-index:2}
     .hero-badge{display:inline-flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.12);border:1px solid rgba(212,175,55,.4);padding:.35rem .9rem;border-radius:50px;color:#FAF5ED;font-size:.84rem;margin-bottom:1.1rem}
     .hero-title{font-size:clamp(1.9rem,4.2vw,3.2rem);font-weight:800;line-height:1.18;color:#FFF;margin-top:0;margin-bottom:1.25rem}
     .hero-title .highlight{color:#D4AF37}
     .hero-desc{font-size:1.05rem;color:rgba(250,245,237,.88);max-width:560px;line-height:1.75;margin-top:0;margin-bottom:1.5rem}
     .hero-location-chips{margin-bottom:1.5rem;font-size:.85rem;color:rgba(250,245,237,.85)}
+    .hero-chip-label{display:inline-flex;align-items:center;gap:.35rem;font-weight:500}
     .hero-chips-wrap{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
     .hero-city-chip{background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.15);padding:.2rem .65rem;border-radius:50px;font-size:.8rem}
     .hero-action-btns{display:flex;flex-wrap:wrap;gap:.85rem;align-items:center}
     .btn-hero-cta{background:linear-gradient(135deg,#E5A93C,#C88D22);color:#4E0915!important;font-weight:700;font-size:.9rem;letter-spacing:.04em;padding:.85rem 1.85rem;border-radius:50px;display:inline-flex;align-items:center;gap:.5rem;box-shadow:0 8px 25px rgba(229,169,60,.35)}
     .btn-hero-outline{background:rgba(255,255,255,.1);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,.4);color:#FFF!important;font-weight:600;font-size:.9rem;letter-spacing:.03em;padding:.85rem 1.85rem;border-radius:50px;display:inline-flex;align-items:center;gap:.5rem}
-    .hero-building-showcase{text-align:center}
-    .hero-building-img{width:100%;max-width:900px;height:auto;aspect-ratio:900/700;display:block;margin:0 auto}
+    .hero-building-showcase{text-align:center;width:100%}
     .hero-bottom-curve{position:absolute;bottom:-1px;left:0;right:0;z-index:3;line-height:0}
     .hero-bottom-curve svg{display:block;width:100%;height:180px}
     @media(max-width:991.98px){
-      .hero-content{text-align:center;padding-top:15px;padding-bottom:25px}
-      .hero-badge{font-size:.68rem!important;padding:.32rem .8rem!important;margin-left:auto;margin-right:auto;text-align:center;line-height:1.35;white-space:normal!important}
-      .hero-title{font-size:clamp(1.75rem,6.2vw,2.35rem)!important;line-height:1.25!important;margin-left:auto;margin-right:auto}
-      .hero-desc{font-size:.9rem!important;margin-left:auto;margin-right:auto;line-height:1.65!important}
-      .hero-location-chips{justify-content:center;text-align:center;width:100%;margin-bottom:1.5rem}
+      #hero{min-height:100svh;display:flex;align-items:center;justify-content:center}
+      .min-vh-100-hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding-top:100px;padding-bottom:110px}
+      .hero-content{text-align:center;padding:0;width:100%;max-width:540px;margin-left:auto;margin-right:auto}
+      .hero-badge{font-size:.78rem!important;padding:.4rem 1rem!important;margin-left:auto;margin-right:auto;text-align:center;line-height:1.35;white-space:normal!important;margin-bottom:1rem}
+      .hero-title{font-size:clamp(1.85rem,6.8vw,2.45rem)!important;line-height:1.24!important;margin-left:auto;margin-right:auto;margin-bottom:1rem}
+      .hero-desc{font-size:.95rem!important;margin-left:auto;margin-right:auto;line-height:1.68!important;margin-bottom:1.25rem}
+      .hero-location-chips{justify-content:center;text-align:center;width:100%;margin-bottom:1.35rem}
       .hero-chip-label{width:100%;justify-content:center;margin-bottom:.35rem;font-size:.8rem}
       .hero-chips-wrap{justify-content:center;width:100%;gap:.4rem}
-      .hero-city-chip{font-size:.74rem;padding:.22rem .72rem}
-      .hero-action-btns{justify-content:center;flex-direction:column;width:100%;max-width:360px;margin:0 auto;gap:.75rem!important}
-      .hero-action-btns .btn-hero-cta,.hero-action-btns .btn-hero-outline{width:100%;justify-content:center;padding:.82rem 1.4rem;font-size:.88rem}
+      .hero-city-chip{font-size:.75rem;padding:.24rem .72rem}
+      .hero-action-btns{justify-content:center;flex-direction:column;width:100%;max-width:340px;margin:0 auto;gap:.75rem!important}
+      .hero-action-btns .btn-hero-cta,.hero-action-btns .btn-hero-outline{width:100%;justify-content:center;padding:.85rem 1.5rem;font-size:.9rem}
       .hero-building-col{display:none!important}
-      .hero-bottom-curve svg{height:140px}
+      .hero-bottom-curve svg{height:120px}
     }
-    /* ── CLS Fix: Reserve space for Bootstrap Icons before font loads ── */
-    /* Inline @font-face so browser knows about the font immediately */
+    /* ── Precise Icon Vertical Alignment for Hero ── */
     @font-face{
       font-family:"bootstrap-icons";
       src:url("assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2") format("woff2"),
@@ -149,14 +152,34 @@
       font-style:normal;
     }
     .bi::before,[class^='bi-']::before,[class*=' bi-']::before{display:inline-block;font-family:"bootstrap-icons";font-style:normal;font-weight:400;line-height:1;vertical-align:-.125em;width:1em;height:1em}
-    /* Hero icon placeholders with known pixel sizes to prevent layout shifts */
+    .hero-badge,
+    .hero-chip-label,
+    .btn-hero-cta,
+    .btn-hero-outline{
+      display:inline-flex!important;
+      align-items:center!important;
+    }
     .hero-badge .bi,
-    .hero-action-btns .bi,
-    .hero-location-chips .bi{
-      display:inline-block;
-      width:1em;
-      height:1em;
-      vertical-align:middle;
+    .hero-chip-label .bi,
+    .hero-location-chips .bi,
+    .hero-action-btns .bi{
+      display:inline-flex!important;
+      align-items:center!important;
+      justify-content:center!important;
+      width:1.15em!important;
+      height:1.15em!important;
+      line-height:1!important;
+      vertical-align:0!important;
+      margin-top:-1.5px!important;
+      flex-shrink:0!important;
+    }
+    .hero-badge .bi::before,
+    .hero-chip-label .bi::before,
+    .hero-location-chips .bi::before,
+    .hero-action-btns .bi::before{
+      display:inline-block!important;
+      vertical-align:0!important;
+      line-height:1!important;
     }
   </style>
 
@@ -177,11 +200,7 @@
   <noscript>
     <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
   </noscript>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  </noscript>
+
   <!-- Schema Markup JSON-LD -->
   <script type="application/ld+json">
   {
@@ -570,12 +589,12 @@
           </div>
 
           <div class="d-flex flex-wrap gap-3 hero-action-btns">
-            <a id="hero-cta-portfolio" href="#portfolio" class="btn-hero-outline">
-              <i class="bi bi-images"></i> Lihat Proyek Kami
-            </a>
             <a id="hero-cta-wa" href="https://wa.me/62088989643555?text=Halo%2C+saya+ingin+konsultasi+proyek"
               class="btn-hero-cta" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-whatsapp"></i> KONSULTASI SEKARANG
+              <i class="bi bi-whatsapp"></i> Konsultasi Sekarang
+            </a>
+            <a id="hero-cta-portfolio" href="/galeri" class="btn-hero-outline">
+              <i class="bi bi-images"></i> Lihat Proyek Kami
             </a>
           </div>
         </div>
@@ -584,7 +603,7 @@
         <div class="col-lg-6 hero-building-col">
           <div class="hero-building-showcase">
             <img src="assets/img/hero/hero.webp" alt="Pembangunan rumah dan gedung modern oleh Kontraktor Surabaya"
-              class="hero-building-img" loading="eager" fetchpriority="high" width="900" height="700">
+              class="hero-building-img" loading="lazy" decoding="async" width="900" height="700">
           </div>
         </div>
 
@@ -1665,6 +1684,10 @@
       function loadSwiper(){
         if(loaded) return;
         loaded=true;
+        var css=document.createElement('link');
+        css.rel='stylesheet';
+        css.href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
+        document.head.appendChild(css);
         var s=document.createElement('script');
         s.src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
         s.onload=function(){

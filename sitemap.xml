@@ -29,7 +29,7 @@
   <!-- 3. Blog (Blog Index) -->
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog</loc>
-    <lastmod>2026-09-24T08:00:00+07:00</lastmod>
+    <lastmod>2026-09-25T08:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -866,6 +866,14 @@
   <url>
     <loc>https://kontraktorsurabaya.biz.id/blog/panduan-atap-baja-ringan-sidoarjo</loc>
     <lastmod>2026-09-24T08:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Real Article 53 - 25 Sep 2026 -->
+  <url>
+    <loc>https://kontraktorsurabaya.biz.id/blog/desain-interior-kantor-minimalis-surabaya</loc>
+    <lastmod>2026-09-25T08:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
